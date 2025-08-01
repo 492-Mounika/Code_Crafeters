@@ -5,6 +5,7 @@ module LightChaser(
     output reg [7:0]light   //output register to display the light
 
 );
+    reg [2:0] count;
     //main block
     always @(posedge clk) begin
         if (rst  && enable) begin
@@ -19,4 +20,5 @@ module LightChaser(
                 count <= count + 1;  // Increment counter for few clocks
             end
         end
+    end
 endmodule
