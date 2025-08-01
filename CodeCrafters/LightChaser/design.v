@@ -16,7 +16,7 @@ module LightChaser(
                 count <= 0;  // Reset the counter after shifting
             end 
             else begin
-                count <= count + 1;  // Increment counter
+                count <= count + 1;  // Increment counter for few clocks
             end
         end
 endmodule
