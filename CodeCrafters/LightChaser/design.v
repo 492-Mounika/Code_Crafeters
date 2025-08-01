@@ -5,7 +5,7 @@ module LightChaser(
     output reg [7:0]light   //output register to display the light
 
 );
-    reg [2:0] count;
+    reg [2:0] count;        //3-bit counter that changes LED for every 4 clock cycles
     //main block
     always @(posedge clk) begin
         if (rst  && enable) begin
