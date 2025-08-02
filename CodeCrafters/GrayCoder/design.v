@@ -13,7 +13,7 @@ always @(*) begin
         end
     end
     else begin
-        gcode = 8'b00000000;    //gcode sets to zero when no input is given
+        gcode = 8'b00000000;    //gray code sets to zero when no input is given
     end
 end
 endmodule
