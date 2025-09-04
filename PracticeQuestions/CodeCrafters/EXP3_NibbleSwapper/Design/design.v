@@ -7,10 +7,10 @@ module nibbleswapper(
 );
 always @(posedge clk) begin
     if (reset) begin
-        out <= 8'h00;
+        out <= 8'h00;                //when reset is given the output is set to zero
     end
     else if (swap_en) begin
-        out <= {in[3:0],in[7:4]};
+        out <= {in[3:0],in[7:4]};    //when swap is enable the swapping of four bits takes place
     end
 end
 endmodule
